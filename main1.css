@@ -1,0 +1,351 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#logo {
+  width: 120px;
+  height: 100px;
+  top: 5px;
+}
+header {
+  margin: 4px;
+  padding: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  background-image: url(background_pattern.png);
+  background-position: cover;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  font-size: 25px;
+}
+.test {
+  margin-left: 30px;
+}
+
+.li1 {
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  flex-wrap: wrap;
+  list-style-type: none; /*pour supprimer les .*/
+}
+.ul1 {
+  list-style: none;
+  font-size: 14px;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 30px;
+  color: grey;
+}
+.pad {
+  border-bottom: 5px solid rgb(247, 114, 37);
+  padding-left: 10px;
+}
+.pac {
+  border-bottom: 5px solid rgb(235, 179, 58);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.gre {
+  border-bottom: 5px solid rgb(54, 184, 54);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.blue {
+  border-bottom: 5px solid blue;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.vio {
+  border-bottom: 5px solid violet;
+  padding-left: 10px;
+}
+
+nav a:hover {
+  display: block;
+  border: 5px solid orange;
+}
+/*     body    */
+#fig {
+  border-top: 2px solid rgb(230, 227, 227);
+  border-bottom: 2px solid rgb(230, 227, 227);
+  /* padding: 20px;   */
+}
+figcaption {
+  text-align: center;
+  color: rgb(110, 106, 106);
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url(background_pattern.png);
+  background-position: cover;
+  padding: 20px;
+}
+.img1 {
+  border: 2px solid rgb(230, 227, 227);
+  padding: 20px;
+}
+.img2 {
+  border: 2px solid rgb(230, 227, 227);
+  line-height: 25px;
+  padding: 4px;
+  margin-right: 40px;
+}
+figure {
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px; /*(l'espace entre les img)*/
+}
+h2 {
+  font-size: 18px;
+  color: rgb(207, 143, 23);
+}
+h3 {
+  color: grey;
+  font-size: 15px;
+}
+h4 {
+  color: rgb(177, 172, 172);
+  font-size: 12px;
+}
+p {
+  color: rgb(110, 106, 106);
+  font-size: 16px;
+}
+.para {
+  margin-right: 30px;
+  padding: 8px;
+  line-height: 25px;
+}
+.para2 {
+  line-height: 25px;
+  padding: 8px;
+}
+#pic {
+  width: 400px;
+  margin-left: -30px;
+}
+#stg {
+  font-weight: bold;
+}
+
+#testt {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+#footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: 2px solid rgb(230, 227, 227);
+  border-bottom: 2px solid rgb(230, 227, 227);
+}
+#footer1 {
+  background-image: url(background_pattern.png);
+  background-position: cover;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+footer {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.center {
+  flex-basis: 50%;
+}
+.a {
+  text-decoration: none;
+  color: grey;
+}
+.face {
+  width: 30px;
+  height: 30px;
+  list-style-type: none;
+  fill: grey;
+  margin-right: 15px;
+}
+.icone ul {
+  display: flex;
+  justify-content: space-between;
+}
+.home {
+  width: 20px;
+  height: 20px;
+  fill: grey;
+}
+footer a {
+  fill: grey;
+}
+.burger {
+  display: none;
+}
+.bar {
+  display: block;
+  /* width: 25px;
+  height: 4px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; */
+}
+
+@media screen and (max-width: 900px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  header {
+    width: 100%;
+  }
+  .ul1 {
+    display: none;
+  }
+  .li1 {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 40px;
+    /* width: 0; */
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; /* (pour centrer les img) */
+    gap: 10px;
+  }
+
+  #testt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #footer1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .img2 {
+    margin: 0px;
+    margin-right: 0px;
+  }
+  #pic {
+    width: 260px;
+    margin-left: -50px;
+  }
+  .face {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .img1 {
+    border: 1px solid rgb(230, 227, 227);
+    padding: 10px;
+    width: 70%;
+  }
+  .pad {
+    border-bottom: none;
+  }
+  .pac {
+    border-bottom: none;
+  }
+  .gre {
+    border-bottom: none;
+  }
+  .blue {
+    border-bottom: none;
+  }
+  .vio {
+    border-bottom: none;
+  }
+  #fig {
+    width: 100%;
+  }
+  .burger {
+    display: block;
+    position: relative;
+    padding: 0px;
+    right: 0;
+    background: transparent;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+  }
+  .bar {
+    display: block;
+    width: 45px;
+    height: 4px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+    background-color: black;
+  }
+  nav a:hover {
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    border: none;
+    letter-spacing: 5px;
+  }
+  nav a {
+    display: block;
+    transition: all 0.4s ease-in-out;
+  }
+  /* width: 0; */
+  /* height: calc(100vh - 65px);
+    right: 0;
+    top: 65px;
+    position: absolute;
+   */
+
+  /* .hum::before,
+  .hum::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 45px;
+    height: 4px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+    background-color: black;
+  } */
+  /* .hum::before {
+    transform: translateY(-12px);
+  }
+  .hum::after {
+    transform: translateY(12px);
+  } */
+}
