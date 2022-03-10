@@ -24,6 +24,8 @@ nav {
   flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
+  z-index: 99;
+  position: relative;
 }
 h1 {
   font-size: 25px;
@@ -38,15 +40,20 @@ h1 {
   display: inline-block;
   flex-wrap: wrap;
   list-style-type: none; /*pour supprimer les .*/
+
 }
 .ul1 {
   list-style: none;
   font-size: 14px;
+  position: absolute;
+  display:none;
+  background-image: url(background_pattern.png);
+  background-position: cover;
 }
 
 nav a {
   text-decoration: none;
-  display: inline-block;
+  display: block;
   padding: 20px 30px;
   color: grey;
 }
@@ -76,7 +83,9 @@ nav a {
 
 nav a:hover {
   display: block;
-  border: 5px solid orange;
+}
+.li1:hover .ul1 {
+  display: block;
 }
 /*     body    */
 #fig {
@@ -231,6 +240,21 @@ footer a {
     top: 40px;
     /* width: 0; */
   }
+  p {
+    font-size: 20px;
+  }
+  footer p {
+    font-size:16px
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  h4 {
+    font-size: 14px;
+  }
   figure {
     display: flex;
     flex-direction: column;
@@ -299,6 +323,7 @@ footer a {
     cursor: pointer;
     width: 50px;
     height: 25px;
+    border:none;
   }
   .bar {
     width:100%
@@ -323,6 +348,7 @@ footer a {
     display: block;
     transition: all 0.4s ease-in-out;
   }
+
   
 
   
