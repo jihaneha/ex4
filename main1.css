@@ -222,10 +222,6 @@ footer a {
 } */
 
 @media screen and (max-width: 900px) {
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
   header {
     width: 100%;
   }
@@ -237,6 +233,7 @@ footer a {
     flex-direction: column;
     right: 0;
     top: 40px;
+    font-size: 16px;
     /* width: 0; */
   }
   p {
@@ -342,14 +339,13 @@ footer a {
   
   }  */
   nav a:hover {
-    font-size: 1.6rem;
-    padding-left: 2rem;
-    border: none;
-    letter-spacing: 5px;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    letter-spacing: 1px;
   }
   nav a {
     display: block;
-    transition: all 0.4s ease-in-out;
+    /* transition: all 0.4s ease-in-out; */
   }
   .li1:hover .ul1 {
     display: none;
@@ -369,4 +365,18 @@ footer a {
   .burger .bar::before {
     transform: translateY(12px);
   } */
+}
+
+@media screen and (max-width: 453px) {
+  .li1 {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  nav a:hover {
+    font-size: 1rem;
+    padding-left: 1rem;
+    letter-spacing: 1px;
+  }
 }
