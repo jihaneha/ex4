@@ -209,17 +209,17 @@ footer {
 footer a {
   fill: grey;
 }
-.burger {
+/* .burger {
   display: none;
 }
 .bar {
   display: block;
-  /* width: 25px;
+   width: 25px;
   height: 4px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; */
-}
+  transition: all 0.3s ease-in-out; 
+} */
 
 @media screen and (max-width: 900px) {
   * {
@@ -314,7 +314,7 @@ footer a {
   #fig {
     width: 100%;
   }
-  .burger {
+  /* .burger {
     display: block;
     position: relative;
     padding: 0px;
@@ -327,7 +327,7 @@ footer a {
   }
   .bar {
     width:100% */
-    display: block; /*span est de type inline*/
+  /* display: block;
      height: 4px;
     margin: 5px auto; 
 
@@ -337,7 +337,7 @@ footer a {
     border-radius: 3px;
     background-color: black;
   
-  }
+  }  */
   nav a:hover {
     font-size: 1.6rem;
     padding-left: 2rem;
@@ -351,7 +351,7 @@ footer a {
   .li1:hover .ul1 {
     display: none;
   }
-  .burger .bar::after,
+  /* .burger .bar::after,
   .burger .bar::before {
     display: block;
     content: "";
@@ -365,10 +365,5 @@ footer a {
   }
   .burger .bar::before {
     transform: translateY(12px);
-  }
- 
-}
-
-}
-
+  } */
 }
